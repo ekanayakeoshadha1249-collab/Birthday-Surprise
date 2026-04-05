@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Babe ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for romantic and modern text -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Dancing+Script:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <!-- Confetti Library -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+
+    <!-- Floating Elements Containers -->
+    <div id="hearts-container"></div>
+    <div id="balloons-container"></div>
+    <div id="stars-container"></div>
+
+    <!-- Hanging Ribbons -->
+    <div class="hanging-ribbons left">
+        <div class="ribbon r1"></div>
+        <div class="ribbon r2"></div>
+    </div>
+    <div class="hanging-ribbons right">
+        <div class="ribbon r3"></div>
+        <div class="ribbon r4"></div>
+    </div>
+
+    <!-- 1. Welcome Screen -->
+    <section id="welcome-screen" class="screen active">
+        <div class="glass-panel text-center">
+            <h1 class="glowing-text">Happy Birthday Manika <i class="fa-solid fa-heart beating-heart"></i></h1>
+            <p class="subtitle">I have a special surprise for you...</p>
+            <button id="start-btn" class="primary-btn">Open My Surprise ✨</button>
+        </div>
+    </section>
+
+    <!-- 2. Memory Section -->
+    <section id="memory-section" class="screen hidden">
+        <div class="glass-panel text-center">
+            <h2>Our Beautiful Memories</h2>
+            <p class="memory-subtitle">Every moment with you is magic.</p>
+
+            <div class="gallery">
+                <div class="photo-card">
+                    <img src="641336539_902916449273214_2694857100570625336_n.jpg" alt="Memory">
+                    <p class="caption">Our first memory together ❤️</p>
+                </div>
+                <div class="photo-card">
+                    <img src="642127261_1628771731598980_2473615347928442916_n.jpg" alt="Memory">
+                    <p class="caption">My favorite smile 😍</p>
+                </div>
+                <div class="photo-card">
+                    <img src="645264219_1987022691886646_2625502555460065462_n.jpg" alt="Memory">
+                    <p class="caption">An unforgettable day ✨</p>
+                </div>
+                <div class="photo-card">
+                    <img src="IMG-20251112-WA0050.jpg" alt="Memory">
+                    <p class="caption">The day I fell for you 🥹</p>
+                </div>
+                <div class="photo-card">
+                    <img src="My ❤️.jpeg" alt="Memory">
+                    <p class="caption">You are my precious 💖</p>
+                </div>
+                <div class="photo-card">
+                    <img src="My❤️.jpg" alt="Memory">
+                    <p class="caption">To the moon and back 🌙</p>
+                </div>
+                <div class="photo-card">
+                    <img src="Screenshot_20251028_154958.jpg" alt="Memory">
+                    <p class="caption">Beautiful moments 📸</p>
+                </div>
+                <div class="photo-card">
+                    <img src="WhatsApp Image 2025-12-09 at 6.10.27 PM.jpeg" alt="Memory">
+                    <p class="caption">My everything 💫</p>
+                </div>
+                <div class="photo-card">
+                    <img src="WhatsApp Image 2026-02-10 at 9.36.51 PM.jpeg" alt="Memory">
+                    <p class="caption">Forever & Always 💍</p>
+                </div>
+                <div class="photo-card">
+                    <img src="WhatsApp Image 2026-02-10 at 9.39.59 PM.jpeg" alt="Memory">
+                    <p class="caption">Just perfect 💕</p>
+                </div>
+                <div class="photo-card">
+                    <img src="mine.jpg" alt="Memory">
+                    <p class="caption">Mine forever 🥰</p>
+                </div>
+                <div class="photo-card">
+                    <img src="❤️.jpg" alt="Memory">
+                    <p class="caption">Love you Patiyo ❤️</p>
+                </div>
+                <!-- New Photos Added -->
+                <div class="photo-card">
+                    <img src="625785354_1417997683449033_9113712532138955036_n.jpg" alt="Memory">
+                    <p class="caption">Pure Happiness ❤️</p>
+                </div>
+                <div class="photo-card">
+                    <img src="649515623_2040973553130610_970719266592469308_n.jpg" alt="Memory">
+                    <p class="caption">Sweetest memories ✨</p>
+                </div>
+                <div class="photo-card">
+                    <img src="649750713_1634282584370903_8016826710227233455_n.png" alt="Memory">
+                    <p class="caption">So cute together 😍</p>
+                </div>
+                <div class="photo-card">
+                    <img src="649807945_957458000602451_5018167856730926822_n.png" alt="Memory">
+                    <p class="caption">Love you so much 💖</p>
+                </div>
+                <div class="photo-card">
+                    <img src="650106976_1905533296757101_5518551698895689577_n.png" alt="Memory">
+                    <p class="caption">A magical moment 💫</p>
+                </div>
+                <div class="photo-card">
+                    <img src="651337249_1279950347348015_7594187814657096308_n.jpg" alt="Memory">
+                    <p class="caption">Forever with you 💍</p>
+                </div>
+                <div class="photo-card">
+                    <img src="653312192_26475476362086095_6848999851584554820_n.png" alt="Memory">
+                    <p class="caption">Our story continues 📖</p>
+                </div>
+                <div class="photo-card">
+                    <img src="655112692_1434885581754250_787173118940200230_n.png" alt="Memory">
+                    <p class="caption">You are my world 🌍</p>
+                </div>
+                <div class="photo-card">
+                    <img src="IMG-20251111-WA0023(1).jpg" alt="Memory">
+                    <p class="caption">Always in my heart ❤️</p>
+                </div>
+                <div class="photo-card">
+                    <img src="IMG-20251112-WA0009.jpg" alt="Memory">
+                    <p class="caption">Beautiful day with you ☀️</p>
+                </div>
+                <div class="photo-card">
+                    <img src="IMG-20251112-WA0011.jpg" alt="Memory">
+                    <p class="caption">Sweetest smile ever 🥰</p>
+                </div>
+                <div class="photo-card">
+                    <img src="IMG-20251112-WA0012.jpg" alt="Memory">
+                    <p class="caption">Memorable times 📸</p>
+                </div>
+                <div class="photo-card">
+                    <img src="IMG-20251112-WA0013.jpg" alt="Memory">
+                    <p class="caption">My favorite person 💑</p>
+                </div>
+                <div class="photo-card">
+                    <img src="IMG-20251112-WA0049.jpg" alt="Memory">
+                    <p class="caption">Love of my life 🌹</p>
+                </div>
+                <div class="photo-card">
+                    <img src="Screenshot 2026-03-17 221358.png" alt="Memory">
+                    <p class="caption">Special moments ✨</p>
+                </div>
+                <div class="photo-card">
+                    <img src="WhatsApp Image 2026-02-15 at 8.46.40 AM.jpeg" alt="Memory">
+                    <p class="caption">Morning sweetness ☕❤️</p>
+                </div>
+                <div class="photo-card">
+                    <img src="WhatsApp Image 2026-02-17 at 6.09.15 PM.jpeg" alt="Memory">
+                    <p class="caption">Evening vibes 🌅</p>
+                </div>
+            </div>
+
+            <button id="to-quiz-btn" class="primary-btn mt-4">Play a little game? 🎯</button>
+        </div>
+    </section>
+
+    <!-- 3. Quiz Section -->
+    <section id="quiz-section" class="screen hidden">
+        <div class="glass-panel text-center">
+            <h2>How Well Do You Know Me? 👀</h2>
+
+            <div id="quiz-container">
+                <!-- Quiz content will be injected here by JS -->
+            </div>
+
+            <button id="to-secret-btn" class="primary-btn hidden mt-4">Read My Message 💌</button>
+        </div>
+    </section>
+
+    <!-- 4. Secret Message -->
+    <section id="secret-message-section" class="screen hidden">
+        <div class="glass-panel text-center">
+            <h2>A Message Just For You</h2>
+
+            <div class="message-box">
+                <p id="typed-message" class="typing-text"></p>
+            </div>
+
+            <button id="to-cake-btn" class="primary-btn mt-4 hidden">Let's Cut The Cake! 🎂</button>
+            <div style="height: 20px;"></div>
+        </div>
+    </section>
+
+    <!-- 5. Cake Celebration -->
+    <section id="cake-section" class="screen hidden">
+        <div class="glass-panel text-center cake-panel">
+            <h2>Happy Birthday Baby! 🎉</h2>
+            <p class="subtitle">Make a wish and let's celebrate...</p>
+
+            <div class="css-cake-container">
+                <div class="cake" id="the-cake">
+                    <div class="candle">
+                        <div class="flame" id="flame"></div>
+                    </div>
+                    <div class="layer layer-top">
+                        <div class="icing"></div>
+                    </div>
+                    <div class="layer layer-middle"></div>
+                    <div class="layer layer-bottom"></div>
+                </div>
+                <!-- Slicing Knife -->
+                <div class="knife" id="knife">🔪</div>
+            </div>
+
+            <button id="cut-cake-btn" class="primary-btn mt-4">Make a Wish & Cut 🔪</button>
+            <button id="final-surprise-btn" class="primary-btn mt-4 hidden">One Last Surprise 🎁</button>
+        </div>
+    </section>
+
+    <!-- 6. Final Surprise -->
+    <section id="final-surprise" class="screen hidden">
+        <div class="final-card glass-panel">
+            <h1 class="glowing-text-large">I Love You Patiyo ❤️</h1>
+            <p class="forever-text">Forever and always.</p>
+
+            <div class="relationship-counter" id="counter">
+                <!-- Counter will be injected by JS -->
+            </div>
+
+            <!-- Removed AI link for now -->
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
